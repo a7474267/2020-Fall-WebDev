@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'utility';
+
+.wrap{
+    max-width: 1920px;
+}
+.header{
+    background-image: url('../img/photo-1552393700-42696fb89bfa.png');
+    background-position: center center;
+    background-size: cover;
+    padding-top: 356px;
+    padding-bottom: 268px;
+    .banner{
+        width: 304px;
+    }
+}
+.profile{
+    .profile-line:before{
+        position: absolute;
+        content:'';
+        height: 1px;
+        width: 384px;
+        background-color: black;
+        top:100px;
+        left:15px;
+    }
+    .profile-dot:before{
+        position: absolute;
+        content:'';
+        border-radius:50%;
+        width: 22px;
+        height: 22px;
+        background-color: #891818;
+        left:-30px;
+    }
+}
+.title:hover{
+    font-size: 80px;
+    text-shadow: 2px 2px red;
+}
