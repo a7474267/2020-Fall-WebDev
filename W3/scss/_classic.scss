@@ -1,0 +1,33 @@
+.classic{
+    padding-top: 64px;
+    padding-bottom: 80px;
+    .img-width{
+        width: 635px;
+        height: 320px;
+    }
+    @include tablet(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h2{
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        .img-width{
+            width: 390px;
+            height: 168px;
+        }
+        li{
+            margin-bottom: 8px;
+            p{
+                font-size: 28px;
+            }
+        }
+        .flex-row-reverse{
+            flex-direction: row;
+            img{
+                margin-left: 0;
+                margin-right: 30px;
+            }
+        }
+    }
+}

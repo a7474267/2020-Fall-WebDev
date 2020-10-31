@@ -1,0 +1,23 @@
+.content{
+    padding-top: 64px;
+    padding-bottom: 80px;
+    background-color: #AA06010D;
+    @include tablet(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h2{
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        ul{
+            flex-wrap: wrap;
+        }
+        li{
+            width:48%;
+            margin-bottom: 40px;
+            p{
+                padding-left: 50px;
+            }
+        }
+    }
+}

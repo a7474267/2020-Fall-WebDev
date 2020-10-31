@@ -1,0 +1,27 @@
+.design{
+    background-image: url('../img/bg.png');
+    padding-top: 64px;
+    padding-bottom: 80px;
+    @include tablet(){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h2{
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+    }
+    .design-img-size{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 540px;
+        height: 472px;
+        @include tablet(){
+            width: 330px;
+            height: 280px;
+            h3{
+                font-size: 32px;
+            }
+        }
+    }
+}
