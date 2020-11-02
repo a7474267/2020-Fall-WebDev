@@ -10,6 +10,25 @@
             margin-bottom: 32px;
         }
     }
+    @include mobile(){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .design-area{
+            flex-direction: column;
+            align-items: center;
+            .mr-15{
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .ml-15{
+                margin-left: 0;
+            }          
+        }
+    }
     .design-img-size{
         background-position: center center;
         background-repeat: no-repeat;
@@ -22,6 +41,10 @@
             h3{
                 font-size: 32px;
             }
+        }
+        @include mobile(){
+            width: 345px;
+            height: 284px;
         }
     }
 }

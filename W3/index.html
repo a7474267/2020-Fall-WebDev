@@ -11,12 +11,12 @@
 <body>
     <div class="wrap">
         <section class="header d-flex justify-content-between bg-primary align-items-center">
-            <a href=""><img src="./img/logo.png" alt=""></a>
-            <ul class="d-flex fs-20">
-                <li><a href="#" class="text-decoration-none text-white">系列鏡框</a></li>
-                <li class="ml-64"><a href="#" class="text-decoration-none text-white">門市據點</a></li>
-                <li class="ml-64"><a href="#" class="text-decoration-none text-white">部落格</a></li>
-                <li class="ml-64"><a href="#" class="text-decoration-none text-white">常見問題</a></li>
+            <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            <ul class="d-flex fs-20 menu">
+                <li><a href="series.html" class="text-decoration-none text-white">系列鏡框</a></li>
+                <li class="ml-64"><a href="store.html" class="text-decoration-none text-white">門市據點</a></li>
+                <li class="ml-64"><a href="blog.html" class="text-decoration-none text-white">部落格</a></li>
+                <li class="ml-64"><a href="question.html" class="text-decoration-none text-white">常見問題</a></li>
             </ul>
         </section>
         <section class="banner">
@@ -62,24 +62,34 @@
             <div class="container">
                 <h2 class="fs-48 text-center font-weight-bold text-secondary mb-60">經典系列鏡框</h2>
                 <ul>
-                    <li class="d-flex mb-32">
-                        <img src="./img/product-1.png" alt="" class="mr-30 img-width">
-                        <a href="" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/icon-diamond.svg" alt="" class="mr-8">
+                    <li class="d-flex mb-32 position-relative">
+                        <img src="./img/product-1.png" alt="" class="mr-30 img-width classic-img">
+                        <a href="" class="d-flex align-items-center text-decoration-none classic-content">
+                            <picture class="mr-8">
+                                <source srcset="./img/icon-diamond-white.svg" media="(max-width: 376px)">
+                                <img src="./img/icon-diamond.svg" alt="">
+                            </picture>
                             <p class="fs-48 text-primary font-weight-bold text-italic">OPTICAL</p>
                         </a>
-                    <li class="d-flex flex-row-reverse mb-32">
-                        <img src="./img/product-2.png" alt="" class="ml-30 img-width">
-                        <a href="" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/icon-sun.svg" alt="" class="mr-8">
-                            <p class="fs-48 text-primary font-weight-bold text-italic">SUNGLASSES</p>
+                    </li>
+                    <li class="d-flex flex-row-reverse mb-32 position-relative">
+                        <img src="./img/product-2.png" alt="" class="ml-30 img-width classic-img">
+                        <a href="" class="d-flex align-items-center text-decoration-none classic-content">
+                            <picture class="mr-8">
+                                <source srcset="./img/icon-sun-white.svg" media="(max-width: 376px)">
+                                <img src="./img/icon-sun.svg" alt="">
+                            </picture>
+                            <p class="fs-48 text-primary font-weight-bold text-italic">OPTICAL</p>
                         </a>
                     </li>
-                    <li class="d-flex">
-                        <img src="./img/product-3.png" alt="" class="mr-30 img-width">
-                        <a href="" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/icon-thunder.svg" alt="" class="mr-8">
-                            <p class="fs-48 text-primary font-weight-bold text-italic">FUNCTIONAL</p>
+                    <li class="d-flex position-relative">
+                        <img src="./img/product-3.png" alt="" class="mr-30 img-width classic-img">
+                        <a href="" class="d-flex align-items-center text-decoration-none classic-content">
+                            <picture class="mr-8">
+                                <source srcset="./img/icon-thunder-white.svg" media="(max-width: 376px)">
+                                <img src="./img/icon-thunder.svg" alt="">
+                            </picture>
+                            <p class="fs-48 text-primary font-weight-bold text-italic">OPTICAL</p>
                         </a>
                     </li>
                 </ul>
@@ -87,7 +97,7 @@
         </section>
         <section class="design">
             <h2 class="fs-48 font-weight-bold text-white text-center mb-60">聯名設計鏡框</h2>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center design-area">
                 <div class="mr-15 design-img-size d-flex align-items-center justify-content-center"
                     style="background-image: url('https://upload.cc/i1/2020/10/31/Hbwl7E.png')">
                     <h3 class="fs-72 text-primary">Double A+</h3>
@@ -101,7 +111,7 @@
         <section class="customer">
             <div class="container">
                 <h2 class="fs-48 text-secondary font-weight-bold text-center mb-60">顧客推薦</h2>
-                <ul class="d-flex justify-content-between">
+                <ul class="d-flex justify-content-between customer-list">
                     <li class="w-23">
                         <img src="./img/rec-1.png" alt="" class="d-block">
                         <div class="pl-16 pt-14 pb-15 card-border">
@@ -162,7 +172,8 @@
                         </li>
                         <li class="mb-16">
                             <label class="mb-4 font-weight-bold" for="feedback">意見反應</label><br>
-                            <textarea name="" id="feedback" cols="30" rows="10" placeholder="請輸入您的意見" class="input-form"></textarea>
+                            <textarea name="" id="feedback" cols="30" rows="10" placeholder="請輸入您的意見"
+                                class="input-form"></textarea>
                         </li>
                         <li class="mb-42">
                             <input type="checkbox" id="agree">
@@ -170,30 +181,33 @@
                         </li>
                         <li>
                             <div class="text-center">
-                                <button type="button" class="bg-primary btn-primary"><a href="" class="text-decoration-none text-white">確認送出</a></button>
+                                <button type="button" class="bg-primary btn-primary"><a href=""
+                                        class="text-decoration-none text-white">確認送出</a></button>
                             </div>
                         </li>
                     </ul>
                 </form>
             </div>
         </section>
-        <section class="footer bg-primary">
+        <section class="footer bg-primary position-relative">
             <div class="container d-flex justify-content-between align-items-center">
                 <ul class="d-flex footer-banner">
-                    <li><a href="" class="mr-48 text-white text-decoration-none">首頁</a></li>
-                    <li><a href="" class="mr-48 text-white text-decoration-none">系列鏡框</a></li>
-                    <li><a href="" class="mr-48 text-white text-decoration-none">門市據點</a></li>
-                    <li><a href="" class="mr-48 text-white text-decoration-none">部落格</a></li>
-                    <li><a href="" class="text-white text-decoration-none">常見問題</a></li>
+                    <li class="mr-48"><a href="index.html" class="text-white text-decoration-none">首頁</a></li>
+                    <li class="mr-48"><a href="series.html" class="text-white text-decoration-none">系列鏡框</a></li>
+                    <li class="mr-48"><a href="store.html" class="text-white text-decoration-none">門市據點</a></li>
+                    <li class="mr-48"><a href="blog.html" class="text-white text-decoration-none">部落格</a></li>
+                    <li><a href="question.html" class="text-white text-decoration-none">常見問題</a></li>
                 </ul>
                 <ul class="d-flex footer-icon">
                     <li><a href="#" class="text-decoration-none"><img src="./img/icon-fb.svg" alt=""></a></li>
-                    <li class="ml-32"><a href="#" class="text-decoration-none"><img src="./img/icon-ig.svg" alt=""></a></li>
-                    <li class="ml-32"><a href="#" class="text-decoration-none"><img src="./img/icon-line.svg" alt=""></a></li>
+                    <li class="ml-32"><a href="#" class="text-decoration-none"><img src="./img/icon-ig.svg" alt=""></a>
+                    </li>
+                    <li class="ml-32"><a href="#" class="text-decoration-none"><img src="./img/icon-line.svg"
+                                alt=""></a></li>
                 </ul>
             </div>
             <div class="mb-40"></div>
-            <div class="container">
+            <div class="container footer-contact">
                 <ul class="footer-border">
                     <li class="d-flex align-items-center mb-20">
                         <img src="./img/icon-phone.svg" alt="" class="mr-17">
@@ -202,18 +216,19 @@
                     </li>
                     <li class="d-flex align-items-center mb-20">
                         <img src="./img/icon-mail.svg" alt="" class="mr-17">
-                        <a href="mailto:glasses@business.com" class="text-decoration-none text-white fs-36">glasses@business.com
+                        <a href="mailto:glasses@business.com"
+                            class="text-decoration-none text-white fs-36">glasses@business.com
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="mb-24"></div>
-            <div class="container d-flex justify-content-between">
-                <ul class="d-flex align-items-center mr-38">
-                    <li class="mr-38"><img src="./img/logo.png" alt=""></li>
+            <div class="container d-flex justify-content-between footer-treaty">
+                <ul class="d-flex align-items-center mr-38 footer-copyright">
+                    <li class="mr-38 footer-logo"><img src="./img/logo.png" alt=""></li>
                     <li class="text-white">Copyright © 2020 Glasses.All rights reserved.</li>
                 </ul>
-                <ul class="d-flex fs-14 align-items-center">
+                <ul class="d-flex fs-14 align-items-center footer-policy">
                     <li><a href="#" class="text-white text-decoration-none">隱私權政策</a></li>
                     <li class="ml-62"><a href="#" class="text-white text-decoration-none">服務條款</a></li>
                 </ul>

@@ -30,4 +30,32 @@
             }
         }
     }
+    @include mobile(){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .classic-img{
+            margin-right: 0;
+            margin:0 auto;
+        }
+        .img-width{
+            width: 345px;
+            height: 134px;
+        }
+        .classic-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            p{
+                color:white;
+            }
+        }
+        .flex-row-reverse img{
+            margin:0 auto;
+        }
+    }
 }
