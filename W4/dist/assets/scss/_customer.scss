@@ -1,0 +1,48 @@
+.customer{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @include tablet(){
+        padding-top: 40px;
+        padding-bottom: 12px;
+        h2{
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        ul{
+            flex-wrap: wrap;
+        }
+        li{
+            width: 47%;
+            margin-bottom: 28px;
+        }
+    }
+    @include mobile(){
+        padding-top: 32px;
+        padding-bottom: 16px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        li{
+            margin:0 auto;
+            width: 90%;
+            margin-bottom: 16px;
+        }
+        img{
+            margin:0 auto;
+        }
+    }
+}
+
+.card-border{
+    border:1px solid #DEE2E6;
+    padding: 16px;
+    @include tablet(){
+        :nth-child(1){
+            margin-bottom: 16px;
+        }
+        :nth-child(2){
+            margin-bottom: 16px;
+        }
+    }
+}
