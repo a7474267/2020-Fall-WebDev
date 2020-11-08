@@ -1,5 +1,6 @@
 public
 node_modules
+app
 .publish
 .vscode
 .DS_Store
