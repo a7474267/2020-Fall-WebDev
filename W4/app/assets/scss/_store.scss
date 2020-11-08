@@ -1,0 +1,101 @@
+.store{
+    padding-top: 16px;
+    padding-bottom: 304px;
+    .select{
+        width: 324px;
+        line-height: 45px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    li{
+        max-width: 350px;
+    }
+    .card-header{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border: 1px solid #00000020;
+    }
+    .card-body{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border: 1px solid #00000020;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .card-footer{
+        background: black;
+        a{
+            display: block;
+            height: 100%;
+            p{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    @include tablet(){
+        padding-top: 8px;
+        padding-bottom: 104px;
+        h2{
+            font-size: 16px;
+            margin-right: 20px;
+        }
+        .select{
+            width: 237px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        .card{
+            max-width: 330px;
+            margin-bottom: 20px;
+        }
+        li:nth-child(2){
+            margin-right: 0;
+        }
+        li:nth-child(3){
+            margin-right: 30px;
+        }
+        li:nth-child(4){
+            margin-right: 0px;
+        }
+    }
+    @include mobile(){
+        .mb-38{
+            margin-bottom: 20px;
+        }
+        .select{
+            width: 277px;
+        }
+        h2{
+            font-size: 14px;
+            margin-right: 12px;
+        }
+        .card{
+            max-width: 345px;
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+        li:nth-child(3){
+            margin-right: 0px;
+        }
+        h3{
+            font-size: 16px;
+        }
+        .card-body li{
+            font-size: 14px;
+        }
+        .card-footer{
+            a{
+                p{
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
