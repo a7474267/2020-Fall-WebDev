@@ -2,7 +2,9 @@
     width: 462px;
     padding-top: 32px;
     padding-bottom: 32px;
-    border: 1px solid #DCDCDC;
+    border-left:1px solid #DCDCDC;
+    border-right:1px solid #DCDCDC;
+    border-bottom: 4px solid transparent;
     &:hover{
         border-bottom:4px solid #AA0601;
     }
