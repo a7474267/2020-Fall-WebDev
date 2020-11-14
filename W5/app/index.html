@@ -1,0 +1,167 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="mainBoard pt-5 pl-5 pr-5">
+  <div class="header d-flex align-items-center mb-6">
+    <h2 class="font-weight-bold mr-6 mb-0 h4">Assignment</h2>
+    <div class="dropdown">
+      <a class="btn dropdown-toggle d-flex font-weight-bold" href="#" role="button" id="dropdownMenuLink"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Courses<span class="material-icons icon-md primary"> expand_more </span>
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <div class="ml-auto">
+      <a href="#"><span class="material-icons icon-md">search</span></a>
+      <a href="#" class="ml-4"><span class="material-icons icon-md">notifications</span></a>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="dropdown mr-auto">
+      <a class="btn dropdown-toggle d-flex font-weight-bold p-0" href="#" role="button" id="dropdownMenuLink"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All (4)<span class="material-icons icon-md primary"> expand_more </span>
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <p class="p-0 m-0 font-size-12">2 comments</p>
+  </div>
+  <div class="row mb-3">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+          href="#list-home" role="tab" aria-controls="home">
+          <div class="d-flex">
+            <p class="mb-0 mr-auto font-size-12">Chapter Assignment 2</p>
+            <p class="mb-0 font-size-12">4 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="mb-0 mr-auto font-weight-bold">Please check this file…</p>
+            <p class="mb-0 font-size-12 font-weight-light">Emily Wang</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+          role="tab" aria-controls="profile">
+          <div class="d-flex">
+            <p class="mb-0 mr-auto font-size-12">Chapter Assignment 1</p>
+            <p class="mb-0 font-size-12">12 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="mb-0 mr-auto font-weight-bold">My Homework</p>
+            <p class="mb-0 font-size-12 font-weight-light">David Xu</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+          href="#list-messages" role="tab" aria-controls="messages">
+          <div class="d-flex">
+            <p class="mb-0 mr-auto font-size-12">Final Assignment</p>
+            <p class="mb-0 font-size-12">18 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="mb-0 mr-auto font-weight-bold">Have a problem with this…</p>
+            <p class="mb-0 font-size-12 font-weight-light">Tony Wei</p>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+          href="#list-settings" role="tab" aria-controls="settings">
+          <div class="d-flex">
+            <p class="mb-0 mr-auto font-size-12">Final Assignment</p>
+            <p class="mb-0 font-size-12">19 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="mb-0 mr-auto font-weight-bold">Did I do it right?</p>
+            <p class="mb-0 font-size-12 font-weight-light">Christina Lin</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <div class="card-title-box">
+                <p class="mb-0 font-size-12">Chapter Assignment 2 / HTML&amp;CSS</p>
+                <p class="mb-0 font-weight-bold">Please check this file for me, thanks!</p>
+              </div>
+              <div class="card-btn">
+                <span class="material-icons icon-md"> more_vert </span>
+              </div>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li class="media">
+                  <img src="assets/images/emilywang.jpeg" class="mr-2 rounded-circle img-avatar" alt="...">
+                  <div class="media-body">
+                    <h6 class="mt-0 mb-0">Emily Wang</h6>
+                    <p class="font-size-12">10:38 AM (4 hours ago)</p>
+                    <p class="font-size-14">Hi Teacher, the attached file is my homework of chapter 2.
+                      And here comes a question: Why in the following code the height of the
+                      <code>div</code> is bigger than the height of the <code>img</code> ?
+                      There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                      <br> What is the gap or extra space below image?</p>
+                    <a href="#" class="d-flex align-items-center font-weight-bold btn-file"><span
+                        class="material-icons icon-md"> attach_file
+                      </span>HW-2-David.zip</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="media">
+                  <img src="assets/images/andychen.jpeg" class="mr-3 rounded-circle img-avatar" alt="...">
+                  <div class="media-body position-relative">
+                    <h6 class="mt-0 mb-0">Andy Chen (You)</h6>
+                    <p class="font-size-12">13:24 AM (1 hours ago)</p>
+                    <p class="font-size-14">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a,
+                      b, c and d sit on.
+                      There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
+                      You
+                      can:</p>
+                    <div class="media-body-btn position-absolute">
+                      <a href="#"><span class="material-icons icon-md mr-4">grade</span></a>
+                      <a href="#"><span class="material-icons icon-md"> create </span></a>
+                    </div>
+                    <ul class="list-unstyled font-size-14">
+                      <li>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the mid
+                        <code>middle</code> ) or</li>
+                      <li>• change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-8 d-flex align-items-center">
+      <a class="btn p-0" href="#" role="button"><span class="material-icons icon-md">navigate_before</span></a>
+      <a class="btn p-0 mr-auto" href="#" role="button"><span class="material-icons icon-md">navigate_next</span></a>
+      <button type="button" class="btn text-success border-success py-2 px-5" data-toggle="modal"
+        data-target="#exampleModal">Mark as read</button>
+      <button type="button" class="btn btn-success ml-3 py-2 px-5" data-toggle="modal"
+        data-target="#exampleModal">Reply</button>
+    </div>
+  </div>
+</section>

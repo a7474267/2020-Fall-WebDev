@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boostrap Index</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <div class="wrap d-flex">
+    <section class="panel bg-secondary pt-5 pl-5 d-flex flex-column pb-5">
+      <h1 class="mb-5"><a href="#">answer</a></h1>
+      <ul class="list-unstyled mb-auto font-weight-bold">
+        <li class="mb-5">
+          <a href="#" class="d-flex">
+            <span class="material-icons mr-3">
+              insert_chart
+            </span>
+            Dashboard
+          </a></li>
+        <li class="mb-5">
+          <a href="#" class="d-flex">
+            <span class="material-icons mr-3">
+              forum
+            </span>Question</a></li>
+        <li class="mb-5">
+          <a href="index.html" class="d-flex"><span class="material-icons mr-3">
+              assignment
+            </span>Assignment</a>
+        </li>
+        <li class="mb-5">
+          <a href="#" class="d-flex"><span class="material-icons mr-3">
+              video_library
+            </span>Course</a>
+        </li>
+        <li class="mb-5">
+          <a href="admin.html" class="d-flex"><span class="material-icons mr-3">
+              supervisor_account
+            </span>Admin</a>
+        </li>
+        <li>
+          <a href="#" class="d-flex"><span class="material-icons mr-3">
+              settings
+            </span>Settings</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <img src="./assets/images/andychen.jpeg" alt="" class="rounded-circle mr-3 img-avatar">
+        <div class="account">
+          <p class="m-0 font-weight-bold">Andy Chen</p>
+          <p class="m-0">andy0401@mail.com</p>
+        </div>
+      </div>
+    </section>
+    
+<section class="mainBoard pt-5 pl-5 pr-5">
+    <div class="header d-flex align-items-center mb-6">
+        <h4 class="font-weight-bold mr-6 mb-0">Admin</h4>
+        <button type="button" class="btn" data-toggle="modal" data-target="#addnewAdmin">
+            <a class="d-flex font-weight-bold" href="#"><span class="material-icons icon-md"> add </span>Add New
+                Admin</a>
+        </button>
+        <div class="ml-auto">
+            <a href="#"><span class="material-icons icon-md">search</span></a>
+            <a href="#" class="ml-4"><span class="material-icons icon-md">notifications</span></a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="border-top-0">ID</th>
+                <th scope="col" class="border-top-0">Name</th>
+                <th scope="col" class="border-top-0">Email</th>
+                <th scope="col" class="border-top-0">Verified</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="d-flex justify-content-end pr-0">
+                    <a href="#" data-target="#visitModal" data-toggle="modal"><span
+                            class="material-icons">visibility</span></a>
+                    <a href="#" data-target="#editModalLong" data-toggle="modal" class="ml-4"><span
+                            class="material-icons">create</span></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td class="d-flex justify-content-end pr-0">
+                    <a href="" data-target="#visitModal" data-toggle="modal"><span
+                            class="material-icons">visibility</span></a>
+                    <a href="" data-target="#editModalLong" data-toggle="modal" class="ml-4"><span
+                            class="material-icons">create</span></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td class="d-flex justify-content-end pr-0">
+                    <a href="" data-target="#visitModal" data-toggle="modal"><span
+                            class="material-icons">visibility</span></a>
+                    <a href="" data-target="#editModalLong" data-toggle="modal" class="ml-4"><span
+                            class="material-icons">create</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<div class="modal fade" id="addnewAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>Account</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <hr>
+                    <h5 class="edit-Title">Verification</h5>
+                    <p class="d-flex align-items-center"><span class="material-icons mr-2 text-danger">
+                            report_problem</span> Unverified</p>
+                    <button type="button" class="btn border-vague py-3 font-weight-bold w-100 text-success">Send
+                        Verification Mail</button>
+                    <hr>
+                    <label for="exampleFormControlSelect1" class="font-weight-bold">Access Level</label>
+                    <select class="form-control" id="exampleFormControlSelect1"
+                        aria-placeholder="-Choose access level-">
+                        <option value="-Choose access level-">-Choose access level-</option>
+                        <option value="Admin">Admin</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </form>
+                <hr>
+                <h5 class="edit-Title">Deactivate Account</h5>
+                <p class="d-flex align-items-center deactivate">
+                    <span class="material-icons warning-icon align-text-bottom">warning</span>This cannot be undone!
+                </p>
+                <button type="button" class="btn deactivate-Btn text-deactivate py-3 font-weight-bold w-100">
+                    Deactivate This Account
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary border-success bg-white text-success py-2 px-5"
+                    data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary bg-success py-2 px-5">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="exampleModalLongTitle">Edit Admin</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="mb-3">Account</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name"
+                            value="Emir Wicks" readonly="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" value="emir.wicks@mail.com" readonly="">
+                    </div>
+                    <h5>Verification</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="material-icons mr-2 text-primary">check_circle</span>
+                        <p class="mr-auto mb-0">Verified</p>
+                        <p class="mb-0">2020/4/12</p>
+                    </div>
+                    <button type="button" class="btn py-3 font-weight-bold w-100 border-vague text-vague">Send
+                        Verification Mail</button>
+                    <hr>
+                    <label for="exampleFormControlSelect1" class="h5">Access Level</label>
+                    <select class="form-control" id="exampleFormControlSelect1"
+                        aria-placeholder="-Choose access level-">
+                        <option value="">Admin</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white text-success border-vague py-2 px-5"
+                    data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success text-white py-2 px-5">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="visitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="media p-5">
+                <img src="./assets/images/emir.jpeg" class="align-self-start mr-3 img-visit" alt="...">
+                <div class="media-body">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="mb-0">#1</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <h6 class="p-0 m-0">Admin</h6>
+                    <h4>Emir Wicks</h4>
+                    <p>emir.wicks@mail.com</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0 bg-secondary">Verified</p>
+                        <a class="btn p-0" data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <span class="material-icons">keyboard_arrow_down</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+
+
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
