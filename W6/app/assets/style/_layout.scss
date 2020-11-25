@@ -1,0 +1,45 @@
+.logo-header{
+    background-image: url('../images/d’Perfume.png');
+    background-repeat: no-repeat;
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 128px;
+    height: 38px;
+}
+.logo-footer{
+    background-image: url('../images/d’Perfumewhite.png');
+    background-repeat: no-repeat;
+    text-indent:101%;
+    overflow:hidden;
+    white-space:nowrap;
+    width: 128px;
+    height: 38px;
+}
+
+.footer{
+    span{
+        font-size: 12px;
+        @include media-breakpoint-up(md){
+            font-size: 16px;
+        }
+    }
+}
+
+.hamburger{
+    max-height:0;
+    overflow:hidden;
+    top:56px;
+    left:0;
+    right:0;
+    transition:2.5s;
+    li{
+        background-color: #707070;
+        border:1px solid white;
+    }
+    z-index:1;
+}
+
+.menu-show .hamburger{
+    max-height:300px;
+}

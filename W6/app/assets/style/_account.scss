@@ -1,0 +1,25 @@
+.account-info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include media-breakpoint-up(md) {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+.fs-14 {
+    font-size: 14px;
+}
+.account-list li {
+    margin-bottom: 41px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 24px;
+    }
+
+    a {
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 1s;
+    }
+    a:hover {
+        border-bottom: 3px solid #916000;
+    }
+}

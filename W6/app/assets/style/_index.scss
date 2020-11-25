@@ -1,0 +1,66 @@
+.banner {
+    background-image: url("../images/index1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 101px;
+    padding-bottom: 135px;
+    .h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 20px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 295px;
+        padding-bottom: 295px;
+        .h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 24px;
+        }
+    }
+}
+.shop-btn {
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    height: 60px;
+    background: transparent;
+    width: 345px;
+    height: 60px;
+    @include media-breakpoint-up(md) {
+        width: 350px;
+    }
+}
+.content {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up(md) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+.h-540 {
+    @include media-breakpoint-up(md){
+        height: 540px;
+    }
+}
+
+.subscribe {
+    background-image: url("../images/index10.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 312px;
+    padding-bottom: 112px;
+}
+
+.recycle {
+    @include media-breakpoint-up(md){
+        padding-top: 60px;
+        padding-bottom: 60px;  
+    }
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
