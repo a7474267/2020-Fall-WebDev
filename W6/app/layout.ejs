@@ -12,75 +12,9 @@
 </head>
 
 <body>
-  <section class="header container py-2 d-flex justify-content-between align-items-center position-relative">
-    <h1 class="mb-0"><a href="index.html" class="d-block logo-header">D perfume</a></h1>
-    <a href="#" class="d-flex justify-content-center align-items-center menu-btn d-md-none"><span class="material-icons">
-        menu
-      </span>
-    </a>
-    <ul class="list-unstyled position-absolute text-center w-100 hamburger bg-hamburger">
-      <li class="py-3 bg-hamburger"><a class="text-white text-decoration-none" href="product.html">Product</a></li>
-      <li class="py-3 bg-hamburger"><a class="text-white text-decoration-none" href="#">Wishlist</a></li>
-      <li class="py-3 bg-hamburger"><a class="text-white text-decoration-none" href="#">Blog</a></li>
-      <li class="py-3 bg-hamburger"><a class="text-white text-decoration-none" href="#">Contact</a></li>
-      <li class="py-3 bg-hamburger"><a class="text-white text-decoration-none" href="login.html">log in</a></li>
-    </ul>
-    <ul class="d-none d-md-flex list-unstyled mb-0">
-      <li>
-        <a href="product.html" class="d-flex text-decoration-none text-secondary">
-          <span class="material-icons">
-            store_mall_directory
-          </span>
-          <span class="h5 mb-0">Product</span>
-        </a>
-      </li>
-      <li class=" ml-6">
-        <a href="login.html" class="d-flex align-items-center text-decoration-none text-secondary">
-          <span class="material-icons">
-            person
-          </span>
-          <span class="h5 mb-0">
-            log in
-          </span>
-        </a>
-      </li>
-      <li class=" ml-6">
-        <a href="#" class="d-flex align-items-center text-secondary text-decoration-none">
-          <span class="material-icons">
-            favorite
-          </span>
-          <span class="h5 mb-0">Wishlist</span></a>
-      </li>
-      <li class=" ml-6">
-        <a href="#" class="d-flex align-items-center text-decoration-none text-secondary">
-          <span class="material-icons">
-            shopping_cart
-          </span>
-          <span class="h5 mb-0">
-            Cart(3)
-          </span>
-        </a>
-      </li>
-    </ul>
-  </section>
+  <%- include ('../app/header.ejs') %> 
   <%- contents %>
-  <section class="footer bg-primary py-2">
-    <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo-footer mr-3">D perfume</a>
-      <span class="ml-auto ml-md-0 mr-md-auto text-white font-size-sm">© 2020. All Rights Reserved.</span>
-      <ul class="d-md-flex list-unstyled mb-0 d-none">
-        <li>
-          <a href="product.html" class="text-decoration-none text-white h5">Product</a>
-        </li>
-        <li class="ml-7">
-          <a href="#" class="text-decoration-none text-white h5">Blog</a>
-        </li>
-        <li class="ml-7">
-          <a href="#" class="text-decoration-none text-white h5">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <%- include ('../app/footer.ejs') %>
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="./assets/js/vendors.js"></script>
