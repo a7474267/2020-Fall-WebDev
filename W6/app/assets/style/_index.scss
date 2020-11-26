@@ -3,8 +3,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-top: 101px;
-    padding-bottom: 135px;
+    height: 480px;
     .h1 {
         font-size: 32px;
     }
@@ -12,8 +11,7 @@
         font-size: 20px;
     }
     @include media-breakpoint-up(md) {
-        padding-top: 295px;
-        padding-bottom: 295px;
+        height: 870px;
         .h1 {
             font-size: 40px;
         }
@@ -41,8 +39,9 @@
         padding-bottom: 60px;
     }
 }
-.h-540 {
-    @include media-breakpoint-up(md){
+
+.category img {
+    @include media-breakpoint-up(md) {
         height: 540px;
     }
 }
@@ -57,9 +56,9 @@
 }
 
 .recycle {
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(md) {
         padding-top: 60px;
-        padding-bottom: 60px;  
+        padding-bottom: 60px;
     }
     padding-top: 40px;
     padding-bottom: 40px;

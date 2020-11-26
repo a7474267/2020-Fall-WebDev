@@ -13081,8 +13081,7 @@ a.text-form:hover, a.text-form:focus {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: 101px;
-  padding-bottom: 135px;
+  height: 480px;
 }
 
 .banner .h1 {
@@ -13095,8 +13094,7 @@ a.text-form:hover, a.text-form:focus {
 
 @media (min-width: 768px) {
   .banner {
-    padding-top: 295px;
-    padding-bottom: 295px;
+    height: 870px;
   }
   .banner .h1 {
     font-size: 40px;
@@ -13134,7 +13132,7 @@ a.text-form:hover, a.text-form:focus {
 }
 
 @media (min-width: 768px) {
-  .h-540 {
+  .category img {
     height: 540px;
   }
 }
@@ -13252,12 +13250,12 @@ a.text-form:hover, a.text-form:focus {
   }
 }
 
-.login-info .col-md-8 {
+.login-info .login-img {
   margin-bottom: 28px;
 }
 
 @media (min-width: 768px) {
-  .login-info .col-md-8 {
+  .login-info .login-img {
     margin-bottom: 0;
   }
 }
