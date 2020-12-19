@@ -1,0 +1,172 @@
+.hotnanny-content {
+    padding-top: 4px;
+    padding-bottom: 60px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 64px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .btn:nth-child(1) {
+        width: 47%;
+        @include media-breakpoint-up(md) {
+            width: 35%;
+        }
+    }
+    .btn:nth-child(2) {
+        width: 47%;
+        @include media-breakpoint-up(md) {
+            width: 57%;
+        }
+    }
+    .hotnanny-content-title {
+        position: sticky;
+        top: 10px;
+        left: 0;
+        p:nth-child(2) {
+            font-size: 20px;
+            @include media-breakpoint-up(md) {
+                font-size: 24px;
+            }
+        }
+    }
+    .hotnanny-content-info {
+        margin-bottom: 40px;
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 60px;
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: 80px;
+        }
+        li {
+            margin-bottom: 20px;
+            @include media-breakpoint-up(sm) {
+                margin-bottom: 28px;
+            }
+            @include media-breakpoint-up(md) {
+                margin-bottom: 40px;
+            }
+        }
+        li:last-child {
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 16px;
+            @include media-breakpoint-up(md) {
+                font-size: 20px;
+            }
+        }
+    }
+    .hotnanny-content-comment {
+        li {
+            width: 100%;
+            @include media-breakpoint-up(sm) {
+                width: 47%;
+            }
+            &:hover {
+                box-shadow: 0px 6px 12px #00000029;
+            }
+        }
+    }
+    .hotnanny-content-others {
+        li {
+            width: 47%;
+            margin-bottom: 1px;
+            @include media-breakpoint-up(sm) {
+                width: 32%;
+                margin-bottom: 16px;
+            }
+            @include media-breakpoint-up(md) {
+                margin-bottom: 8px;
+            }
+        }
+        .other-size {
+            height: 128px;
+        }
+    }
+    .photoFocus {
+        height: 282px;
+        @include media-breakpoint-up(sm) {
+            height: 221px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 440px;
+        }
+        &:hover {
+            box-shadow: 0px 6px 12px #00000029;
+        }
+    }
+    .photoList div {
+        width: 82px;
+        height: 82px;
+        @include media-breakpoint-up(sm) {
+            width: 63px;
+            height: 63px;
+        }
+        @include media-breakpoint-up(md) {
+            width: 96px;
+            height: 96px;
+        }
+        &:hover {
+            box-shadow: 0px 6px 12px #00000029;
+        }
+    }
+}
+.modal-body {
+    padding-top: 20px;
+    padding-bottom: 48px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 60px;
+    }
+    form {
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+            width: 63%;
+        }
+    }
+}
+
+.modal-bg-size {
+    height: 100px;
+    @include media-breakpoint-up(sm) {
+        height: 151px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 282px;
+    }
+}
+
+.bookingModal-link i {
+    color: #888888;
+}
+
+.bookingModal-link:hover {
+    border: 1px solid #d5411a !important;
+    i {
+        color: #f0ad25;
+    }
+}
+
+.order-status:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #da3a1a;
+    left: 50%;
+    top: -50%;
+}
+
+.select-size {
+    width: 241px;
+    @include media-breakpoint-up(sm) {
+        width: 224px;
+    }
+}

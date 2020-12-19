@@ -1,0 +1,18 @@
+.footer {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    @include media-breakpoint-up(md) {
+        padding-top: 60px;
+        padding-bottom: 28px;
+    }
+    a:hover{
+        font-weight: bold;
+    }
+}
+
+.copyright {
+    font-size: 14px;
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+    }
+}

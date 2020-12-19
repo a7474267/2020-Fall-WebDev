@@ -1,0 +1,35 @@
+.header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    a:hover{
+        font-weight: bold;
+    }
+}
+
+.logo {
+    background-image: url(../images/PETPET.png);
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 121px;
+    height: 55px;
+}
+
+.hamburger {
+    max-height: 0px;
+    top: 60px;
+    left: 0;
+    right:0;
+    transition: 2.5s;
+    overflow:hidden;
+    z-index:1;
+}
+
+.hamburger-btn{
+    position:fixed;
+    right:10px;
+}
+.menushow .hamburger {
+    max-height:300px;
+}

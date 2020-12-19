@@ -1,0 +1,226 @@
+.banner {
+    @include media-breakpoint-up(sm) {
+        min-height: 736px;
+    }
+    .container {
+        padding-top: 364px;
+        @include media-breakpoint-up(sm) {
+            padding-top: 416px;
+        }
+        @include media-breakpoint-up(md) {
+            padding-top: 264px;
+        }
+    }
+    .banner-input select:nth-child(1) {
+        height: 48px;
+        margin-bottom: 16px;
+        @include media-breakpoint-up(sm) {
+            max-width: 390px;
+            margin-bottom: 12px;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 120px;
+            margin-bottom: 0;
+        }
+    }
+    .banner-input select:nth-child(2) {
+        margin-bottom: 16px;
+        height: 48px;
+        @include media-breakpoint-up(sm) {
+            max-width: 390px;
+            margin-bottom: 12px;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 210px;
+            margin-bottom: 0;
+        }
+    }
+    .banner-input select:nth-child(3) {
+        margin-bottom: 12px;
+        height: 48px;
+        @include media-breakpoint-up(sm) {
+            max-width: 390px;
+            margin-bottom: 16px;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 210px;
+            margin-bottom: 0;
+        }
+    }
+    .banner-input .input-group-append {
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+            max-width: 390px;
+        }
+        @include media-breakpoint-up(md) {
+            width: 95px;
+            height: 48px;
+        }
+        button {
+            width: 100%;
+        }
+    }
+    .banner-input-list {
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 102px;
+        }
+        @include media-breakpoint-up(md) {
+            margin-bottom: 190px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 4px;
+            @include media-breakpoint-up(sm) {
+                font-size: 32px;
+                margin-bottom: 8px;
+            }
+            @include media-breakpoint-up(md) {
+                font-size: 40px;
+                margin-bottom: 16px;
+            }
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+            @include media-breakpoint-up(sm) {
+                margin-bottom: 20px;
+                text-align: left;
+                transform: translateX(-20%);
+            }
+            @include media-breakpoint-up(md) {
+                margin-bottom: 48px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.banner-img {
+    width: 375px;
+    height: 352px;
+    left: 50%;
+    transform: transLateX(-50%);
+    @include media-breakpoint-up(sm) {
+        width: 210px;
+        height: 288px;
+        top: 104px;
+    }
+    @include media-breakpoint-up(md) {
+        width: 530px;
+        height: 736px;
+        left: 0;
+        top: 0;
+        transform: transLateX(0%);
+    }
+}
+
+.hotnanny {
+    padding-top: 80px;
+}
+
+.swipe-card {
+    padding-top: 54px;
+    padding-bottom: 28px;
+}
+
+.person {
+    top: -50px;
+}
+
+.booking {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.booking-list li:nth-child(1) {
+    width: 345px;
+    @include media-breakpoint-up(sm) {
+        width: 31%;
+    }
+}
+.booking-list li:nth-child(2) {
+    width: 345px;
+    @include media-breakpoint-up(sm) {
+        width: 27%;
+    }
+}
+
+.booking-list li:nth-child(3) {
+    width: 345px;
+    @include media-breakpoint-up(sm) {
+        width: 24%;
+    }
+}
+
+.booking-list li:nth-child(4) {
+    width: 345px;
+    @include media-breakpoint-up(sm) {
+        width: 15%;
+    }
+}
+.booking-bg-height {
+    height: 132px;
+    @include media-breakpoint-up(sm) {
+        height: 210px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 350px;
+    }
+}
+
+.statistic {
+    height: 812px;
+    padding-top: 60px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 80px;
+        height: 584px;
+    }
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+.booking-process {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @include media-breakpoint-up(sm) {
+        padding-top: 60px;
+    }
+    @include media-breakpoint-up(md) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.contact {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    h2{
+        font-size: 24px;
+        @include media-breakpoint-up(sm) {
+            font-size: 40px;
+        }
+    }
+    p{
+        @include media-breakpoint-up(sm) {
+            font-size: 20px;
+        }
+    }
+}
+
+.filter-gray {
+    filter: grayscale(70%);
+}
+
+.filter-gray:hover {
+    filter: grayscale(0%);
+}
