@@ -17,6 +17,7 @@
 }
 
 .homestay-banner-size {
+    width: 100%;
     height: 352px;
     @include media-breakpoint-up(sm) {
         height: 315px;

@@ -101,7 +101,7 @@
         }
     }
     .photoList img {
-        width: 82px;
+        width: 75px;
         height: 82px;
         @include media-breakpoint-up(sm) {
             width: 63px;
@@ -131,6 +131,7 @@
 }
 
 .modal-bg-size {
+    width: 100%;
     height: 100px;
     @include media-breakpoint-up(sm) {
         height: 151px;
