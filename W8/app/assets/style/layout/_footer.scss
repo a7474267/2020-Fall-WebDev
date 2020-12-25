@@ -1,7 +1,7 @@
 .footer {
     padding-top: 8px;
     padding-bottom: 24px;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         padding-top: 60px;
         padding-bottom: 28px;
     }

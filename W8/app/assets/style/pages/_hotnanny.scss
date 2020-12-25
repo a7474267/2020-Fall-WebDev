@@ -21,9 +21,6 @@
         }
     }
     .hotnanny-content-title {
-        position: sticky;
-        top: 10px;
-        left: 0;
         p:nth-child(2) {
             font-size: 20px;
             @include media-breakpoint-up(md) {
@@ -86,10 +83,12 @@
             }
         }
         .other-size {
+            width: 100%;
             height: 128px;
         }
     }
     .photoFocus {
+        width: 100%;
         height: 282px;
         @include media-breakpoint-up(sm) {
             height: 221px;
@@ -101,7 +100,7 @@
             box-shadow: 0px 6px 12px #00000029;
         }
     }
-    .photoList div {
+    .photoList img {
         width: 82px;
         height: 82px;
         @include media-breakpoint-up(sm) {

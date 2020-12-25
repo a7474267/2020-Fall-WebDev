@@ -11,19 +11,31 @@ hamburgerBtn.addEventListener('click', function (e) {
   } else {
     body.classList.remove('menushow');
   }
-}); //點擊更換圖片
+}); //sticky effect
 
-var photoArea = document.querySelectorAll('.photoList div');
+var hotnannyTitle = document.querySelector('.hotnanny-content-title');
+window.addEventListener('scroll', stickyHandler);
+
+function stickyHandler() {
+  if (body.clientWidth > 900) {
+    hotnannyTitle.classList.add('sticky');
+  } else {
+    hotnannyTitle.classList.remove('sticky');
+  }
+}
+
+; //點擊更換圖片
+
+var photoList = document.querySelectorAll('.photoList img');
 var photoFocus = document.querySelector('.photoFocus');
-photoArea.forEach(function (item) {
+photoList.forEach(function (item) {
   item.addEventListener('click', changePhoto);
 });
 
 function changePhoto(e) {
-  var photoAreaList = Array.from(e.target.classList);
-  var photoFocusList = Array.from(photoFocus.classList);
-  photoFocusList.splice(0, 1, photoAreaList[0]);
-  photoFocus.setAttribute('class', photoFocusList.join(" "));
+  var photoListData = e.target.getAttribute('src');
+  var photoFocusList = photoFocus.attributes[0];
+  photoFocusList.textContent = photoListData;
 }
 
 ; //swiper 效果

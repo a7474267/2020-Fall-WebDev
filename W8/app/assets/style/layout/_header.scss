@@ -24,6 +24,19 @@
     transition: 2.5s;
     overflow:hidden;
     z-index:1;
+    
+    li{
+        background-color: #fff;
+        a{
+            color:#772400;
+        }
+        &:hover{
+            background-color: #772400;
+            a{
+                color:white;
+            }
+        }
+    }
 }
 
 .hamburger-btn{

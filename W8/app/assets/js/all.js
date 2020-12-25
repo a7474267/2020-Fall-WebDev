@@ -8,20 +8,31 @@ hamburgerBtn.addEventListener('click', function (e) {
   }
 })
 
+//sticky effect
+let hotnannyTitle = document.querySelector('.hotnanny-content-title');
+window.addEventListener('scroll', stickyHandler)
+
+function stickyHandler() {
+  if ((body.clientWidth) > (900)) {
+    hotnannyTitle.classList.add('sticky');
+  } else {
+    hotnannyTitle.classList.remove('sticky');
+  }
+};
+
 //點擊更換圖片
 
-let photoArea = document.querySelectorAll('.photoList div');
+let photoList = document.querySelectorAll('.photoList img');
 let photoFocus = document.querySelector('.photoFocus');
 
-photoArea.forEach(function (item) {
+photoList.forEach(function (item) {
   item.addEventListener('click', changePhoto);
 })
 
 function changePhoto(e) {
-  let photoAreaList = Array.from(e.target.classList);
-  let photoFocusList = Array.from(photoFocus.classList);
-  photoFocusList.splice(0, 1, photoAreaList[0]);
-  photoFocus.setAttribute('class', photoFocusList.join(" "));
+  let photoListData = e.target.getAttribute('src');
+  let photoFocusList = photoFocus.attributes[0];
+  photoFocusList.textContent = photoListData;
 };
 
 //swiper 效果
