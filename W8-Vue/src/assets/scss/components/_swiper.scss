@@ -1,0 +1,11 @@
+.swiper-button-next {
+  position: absolute;
+  padding: 24px;
+  border-radius: 50%;
+  background-color: $primary;
+  text-align: center;
+  color: $white;
+  &:after {
+    display: none;
+  }
+}
