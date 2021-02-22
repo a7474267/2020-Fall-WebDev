@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/2020-Fall-WebDev/'
+        ? '/W8-Vue/'
         : './',
     outputDir: "dist",
     lintOnSave: true,
